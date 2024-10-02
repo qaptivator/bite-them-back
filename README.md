@@ -42,6 +42,17 @@ To make this possible you need to follow a commit message convention. The defaul
 Because a push to the main branch triggers the release action it is recommended to work on a separate branch until your work is done and then merge that branch into main to release it. \
 _Or you just work locally and if you want to release you push your changes to main, up to you how you want to do it ;)_
 
+# contributing
+
+for each feature make a `feature` branch, then merge it with pull requests.
+there will be two branches: `main` and `dev`.
+
+- `main` is what is currently live in factorio mod portal.
+- `dev` is what is currently in development.
+  `feature` branches are temporary. when they get merged to `dev`, they get removed.
+
+  use the conventional commits when making commits: `<type>: <description>`
+
 # the ideas zone
 
 these are my speculations on how the mod will look like. it's a random unorganized mess so dont expect much of it.<br>

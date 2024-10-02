@@ -1,12 +1,10 @@
 {
-  "name": "[internal-mod-name]",
+  "name": "bite-them-back",
   "version": "0.0.0",
-  "title": "[MOD DISPLAY NAME]",
-  "author": "[YOUR MODS.FACTORIO.COM USERNAME]",
-  "homepage": "[HOMEPAGE/REPO URL]",
-  "description": "[SHORT DESCRIPTION]",
+  "title": "Bite them back!",
+  "author": "captivator",
+  "homepage": "https://github.com/qaptivator/bite-them-back/tree/main",
+  "description": "In this overhaul mod, YOU become the BITER!",
   "factorio_version": "1.1",
-  "dependencies": [
-    "base"
-  ]
+  "dependencies": ["base"]
 }

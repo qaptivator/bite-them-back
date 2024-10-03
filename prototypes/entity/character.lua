@@ -1,4 +1,4 @@
-local biteranims = require("scripts.og.biter_animations")
+require("prototypes.entity.og.biter-animations")
 
 local char = data.raw["character"]["character"]
 local biter = data.raw["unit"]["small-biter"]
@@ -32,41 +32,37 @@ behemoth_biter_tint2 = { r = 0.657, g = 0.95, b = 0.432, a = 1.000 }
 -- all animations require 8 directions, except for running with gun for some odd reason
 local animations = {
 	{
-		idle = biteranims.biterrunanimation(small_biter_scale, small_biter_tint1, small_biter_tint2),
-		idle_with_gun = biteranims.biterrunanimation(small_biter_scale, small_biter_tint1, small_biter_tint2),
-		running = biteranims.biterrunanimation(small_biter_scale, small_biter_tint1, small_biter_tint2), -- TODO: decrease speed
-		mining_with_tool = biteranims.biterattackanimation(small_biter_scale, small_biter_tint1, small_biter_tint2),
+		idle = biteridleanimation(small_biter_scale, small_biter_tint1, small_biter_tint2),
+		idle_with_gun = biteridleanimation(small_biter_scale, small_biter_tint1, small_biter_tint2),
+		running = biterrunanimation(small_biter_scale, small_biter_tint1, small_biter_tint2), -- TODO: decrease speed
+		mining_with_tool = biterattackanimation(small_biter_scale, small_biter_tint1, small_biter_tint2),
 		running_with_gun = char.animations[1].running_with_gun, -- this requires 18 directions, while biter has 16. TODO: make a spritesheet for 18 directions
 		flipped_shadow_running_with_gun = char.animations[1].flipped_shadow_running_with_gun,
 	},
 	{
 		armors = { "heavy-armor" },
-		idle = biteranims.biterrunanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
-		idle_with_gun = biteranims.biterrunanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
-		running = biteranims.biterrunanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
-		mining_with_tool = biteranims.biterattackanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
+		idle = biteridleanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
+		idle_with_gun = biteridleanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
+		running = biterrunanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
+		mining_with_tool = biterattackanimation(medium_biter_scale, medium_biter_tint1, medium_biter_tint2),
 		running_with_gun = char.animations[1].running_with_gun,
 		flipped_shadow_running_with_gun = char.animations[1].flipped_shadow_running_with_gun,
 	},
 	{
 		armors = { "modular-armor", "power-armor" },
-		idle = biteranims.biterrunanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
-		idle_with_gun = biteranims.biterrunanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
-		running = biteranims.biterrunanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
-		mining_with_tool = biteranims.biterattackanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
+		idle = biteridleanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
+		idle_with_gun = biteridleanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
+		running = biterrunanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
+		mining_with_tool = biterattackanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
 		running_with_gun = char.animations[1].running_with_gun,
 		flipped_shadow_running_with_gun = char.animations[1].flipped_shadow_running_with_gun,
 	},
 	{
 		armors = { "power-armor-mk2" },
-		idle = biteranims.biterrunanimation(behemoth_biter_scale, behemoth_biter_tint1, behemoth_biter_tint2),
-		idle_with_gun = biteranims.biterrunanimation(behemoth_biter_scale, behemoth_biter_tint1, behemoth_biter_tint2),
-		running = biteranims.biterrunanimation(behemoth_biter_scale, behemoth_biter_tint1, behemoth_biter_tint2),
-		mining_with_tool = biteranims.biterattackanimation(
-			behemoth_biter_scale,
-			behemoth_biter_tint1,
-			behemoth_biter_tint2
-		),
+		idle = biteridleanimation(behemoth_biter_scale, behemoth_biter_tint1, behemoth_biter_tint2),
+		idle_with_gun = biteridleanimation(behemoth_biter_scale, behemoth_biter_tint1, behemoth_biter_tint2),
+		running = biterrunanimation(behemoth_biter_scale, behemoth_biter_tint1, behemoth_biter_tint2),
+		mining_with_tool = biterattackanimation(behemoth_biter_scale, behemoth_biter_tint1, behemoth_biter_tint2),
 		running_with_gun = char.animations[1].running_with_gun,
 		flipped_shadow_running_with_gun = char.animations[1].flipped_shadow_running_with_gun,
 	},

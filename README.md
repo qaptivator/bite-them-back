@@ -44,14 +44,12 @@ _Or you just work locally and if you want to release you push your changes to ma
 
 # contributing
 
-for each feature make a `feature` branch, then merge it with pull requests.
 there will be two branches: `main` and `dev`.
 
 - `main` is what is currently live in factorio mod portal.
 - `dev` is what is currently in development.
-  `feature` branches are temporary. when they get merged to `dev`, they get removed.
 
-  use the conventional commits when making commits: `<type>: <description>`
+make all changes in dev, then commit and push them to main with conventional commits: `<type>: <description>`
 
 # todo
 

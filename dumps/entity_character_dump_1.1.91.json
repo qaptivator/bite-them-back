@@ -1,0 +1,3768 @@
+{
+  "name": "character",
+  "category": "entity",
+  "version": "1.1.91",
+  "data": {
+    "hit_visualization_box": [
+      [
+        -0.2,
+        -1.1
+      ],
+      [
+        0.2,
+        0.2
+      ]
+    ],
+    "water_reflection": {
+      "rotate": false,
+      "pictures": {
+        "filename": "__base__/graphics/entity/character/character-reflection.png",
+        "height": 19,
+        "shift": [
+          0,
+          1.046875
+        ],
+        "scale": 5,
+        "priority": "extra-high",
+        "width": 13,
+        "variation_count": 1
+      },
+      "orientation_to_variation": false
+    },
+    "alert_when_damaged": false,
+    "order": "a",
+    "enter_vehicle_distance": 3,
+    "selection_box": [
+      [
+        -0.4,
+        -1.4
+      ],
+      [
+        0.4,
+        0.2
+      ]
+    ],
+    "eat": [{
+      "filename": "__base__/sound/eat.ogg",
+      "volume": 1
+    }],
+    "running_sound_animation_positions": [
+      5,
+      16
+    ],
+    "icon": "__core__/graphics/icons/entity/character.png",
+    "right_footprint_offset": [
+      0.1,
+      0
+    ],
+    "ticks_to_keep_aiming_direction": 100,
+    "flags": [
+      "placeable-off-grid",
+      "breaths-air",
+      "not-repairable",
+      "not-on-map",
+      "not-flammable"
+    ],
+    "name": "character",
+    "max_health": 250,
+    "heartbeat": [{"filename": "__base__/sound/heartbeat.ogg"}],
+    "reach_distance": 10,
+    "character_corpse": "character-corpse",
+    "mining_speed": 0.5,
+    "sticker_box": [
+      [
+        -0.2,
+        -1
+      ],
+      [
+        0.2,
+        0
+      ]
+    ],
+    "build_distance": 10,
+    "crafting_categories": ["crafting"],
+    "animations": [
+      {
+        "running": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_running.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_running.png",
+              "animation_speed": 0.6,
+              "height": 132,
+              "shift": [
+                0,
+                -0.5625
+              ],
+              "scale": 0.5,
+              "width": 88
+            },
+            "height": 66,
+            "shift": [
+              0,
+              -0.5625
+            ],
+            "width": 44
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 78,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_mask.png",
+              "height": 110,
+              "shift": [
+                0,
+                -0.6875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 40,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_mask.png",
+            "height": 56,
+            "shift": [
+              0,
+              -0.6875
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 190,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "height": 68,
+              "shift": [
+                0.9375,
+                0.078125
+              ]
+            },
+            "width": 96,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 34,
+            "shift": [
+              0.9375,
+              0.0625
+            ]
+          }
+        ]},
+        "idle": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_idle.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle.png",
+              "animation_speed": 0.15,
+              "height": 116,
+              "shift": [
+                0,
+                -0.65625
+              ],
+              "scale": 0.5,
+              "width": 92
+            },
+            "height": 58,
+            "shift": [
+              0,
+              -0.65625
+            ],
+            "width": 46
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 56,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_mask.png",
+              "height": 90,
+              "shift": [
+                0,
+                -0.8125
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 28,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_mask.png",
+            "height": 46,
+            "shift": [
+              0,
+              -0.8125
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 164,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_shadow.png",
+              "height": 78,
+              "shift": [
+                0.953125,
+                0.015625
+              ]
+            },
+            "width": 84,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_shadow.png",
+            "height": 40,
+            "shift": [
+              0.96875,
+              0.03125
+            ]
+          }
+        ]},
+        "idle_with_gun": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun.png",
+              "animation_speed": 0.15,
+              "height": 128,
+              "shift": [
+                0,
+                -0.6875
+              ],
+              "scale": 0.5,
+              "width": 110
+            },
+            "height": 64,
+            "shift": [
+              0,
+              -0.6875
+            ],
+            "width": 56
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 72,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun_mask.png",
+              "height": 88,
+              "shift": [
+                -0.015625,
+                -0.6875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 36,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun_mask.png",
+            "height": 44,
+            "shift": [
+              -0.03125,
+              -0.6875
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 182,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun_shadow.png",
+              "height": 94,
+              "shift": [
+                1.03125,
+                0
+              ]
+            },
+            "width": 92,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun_shadow.png",
+            "height": 48,
+            "shift": [
+              1.03125,
+              0
+            ]
+          }
+        ]},
+        "running_with_gun": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 18,
+            "filename": "__base__/graphics/entity/character/level1_running_gun.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 18,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun.png",
+              "animation_speed": 0.6,
+              "height": 136,
+              "shift": [
+                0.078125,
+                -0.609375
+              ],
+              "scale": 0.5,
+              "width": 108
+            },
+            "height": 68,
+            "shift": [
+              0.09375,
+              -0.625
+            ],
+            "width": 56
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 66,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun_mask.png",
+              "height": 100,
+              "shift": [
+                0.03125,
+                -0.71875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 34,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_gun_mask.png",
+            "height": 50,
+            "shift": [
+              0.03125,
+              -0.71875
+            ]
+          },
+          {
+            "direction_count": 18,
+            "stripes": [
+              {
+                "height_in_frames": 18,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_gun_shadow-1.png"
+              },
+              {
+                "height_in_frames": 18,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_gun_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "stripes": [
+                {
+                  "height_in_frames": 18,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 18,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 192,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "height": 100,
+              "shift": [
+                0.9375,
+                0
+              ]
+            },
+            "width": 96,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 50,
+            "shift": [
+              0.9375,
+              0
+            ]
+          }
+        ]},
+        "flipped_shadow_running_with_gun": {"layers": [{
+          "direction_count": 18,
+          "animation_speed": 0.6,
+          "hr_version": {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "line_length": 22,
+            "scale": 0.5,
+            "width": 178,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow_flipped.png",
+            "height": 100,
+            "shift": [
+              0.796875,
+              0
+            ]
+          },
+          "line_length": 22,
+          "width": 90,
+          "draw_as_shadow": true,
+          "frame_count": 22,
+          "filename": "__base__/graphics/entity/character/level1_running_gun_shadow_flipped.png",
+          "height": 50,
+          "shift": [
+            0.8125,
+            0
+          ]
+        }]},
+        "mining_with_tool": {"layers": [
+          {
+            "frame_count": 26,
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "frame_count": 26,
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "height": 194,
+              "shift": [
+                0,
+                -0.46875
+              ],
+              "scale": 0.5,
+              "width": 196
+            },
+            "height": 98,
+            "shift": [
+              0,
+              -0.46875
+            ],
+            "width": 98
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 140,
+              "frame_count": 26,
+              "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_mask.png",
+              "height": 138,
+              "shift": [
+                0.015625,
+                -0.59375
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 70,
+            "frame_count": 26,
+            "filename": "__base__/graphics/entity/character/level1_mining_tool_mask.png",
+            "height": 70,
+            "shift": [
+              0,
+              -0.59375
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "width": 292,
+              "draw_as_shadow": true,
+              "frame_count": 26,
+              "height": 142,
+              "shift": [
+                0.8125,
+                0
+              ]
+            },
+            "width": 146,
+            "draw_as_shadow": true,
+            "frame_count": 26,
+            "height": 72,
+            "shift": [
+              0.8125,
+              0
+            ]
+          }
+        ]}
+      },
+      {
+        "armors": [
+          "heavy-armor",
+          "modular-armor"
+        ],
+        "running": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_running.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_running.png",
+              "animation_speed": 0.6,
+              "height": 132,
+              "shift": [
+                0,
+                -0.5625
+              ],
+              "scale": 0.5,
+              "width": 88
+            },
+            "height": 66,
+            "shift": [
+              0,
+              -0.5625
+            ],
+            "width": 44
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 78,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_mask.png",
+              "height": 110,
+              "shift": [
+                0,
+                -0.6875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 40,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_mask.png",
+            "height": 56,
+            "shift": [
+              0,
+              -0.6875
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level2addon_running.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_running.png",
+              "animation_speed": 0.6,
+              "height": 106,
+              "shift": [
+                0,
+                -0.78125
+              ],
+              "scale": 0.5,
+              "width": 70
+            },
+            "height": 54,
+            "shift": [
+              0,
+              -0.78125
+            ],
+            "width": 36
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 70,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_running_mask.png",
+              "height": 104,
+              "shift": [
+                0,
+                -0.796875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 36,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level2addon_running_mask.png",
+            "height": 54,
+            "shift": [
+              0,
+              -0.78125
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 190,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "height": 68,
+              "shift": [
+                0.9375,
+                0.078125
+              ]
+            },
+            "width": 96,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 34,
+            "shift": [
+              0.9375,
+              0.0625
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level2addon_running_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level2addon_running_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level2addon_running_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level2addon_running_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 194,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "height": 68,
+              "shift": [
+                0.96875,
+                0.078125
+              ]
+            },
+            "width": 98,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 34,
+            "shift": [
+              0.96875,
+              0.0625
+            ]
+          }
+        ]},
+        "idle": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_idle.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle.png",
+              "animation_speed": 0.15,
+              "height": 116,
+              "shift": [
+                0,
+                -0.65625
+              ],
+              "scale": 0.5,
+              "width": 92
+            },
+            "height": 58,
+            "shift": [
+              0,
+              -0.65625
+            ],
+            "width": 46
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 56,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_mask.png",
+              "height": 90,
+              "shift": [
+                0,
+                -0.8125
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 28,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_mask.png",
+            "height": 46,
+            "shift": [
+              0,
+              -0.8125
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level2addon_idle.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_idle.png",
+              "animation_speed": 0.15,
+              "height": 86,
+              "shift": [
+                0.015625,
+                -0.859375
+              ],
+              "scale": 0.5,
+              "width": 56
+            },
+            "height": 44,
+            "shift": [
+              0,
+              -0.84375
+            ],
+            "width": 28
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 52,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_idle_mask.png",
+              "height": 84,
+              "shift": [
+                0,
+                -0.875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 26,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level2addon_idle_mask.png",
+            "height": 42,
+            "shift": [
+              0,
+              -0.875
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 164,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_shadow.png",
+              "height": 78,
+              "shift": [
+                0.953125,
+                0.015625
+              ]
+            },
+            "width": 84,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_shadow.png",
+            "height": 40,
+            "shift": [
+              0.96875,
+              0.03125
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level2addon_idle_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level2addon_idle_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 186,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_idle_shadow.png",
+              "height": 78,
+              "shift": [
+                1.125,
+                0.015625
+              ]
+            },
+            "width": 94,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 40,
+            "shift": [
+              1.125,
+              0.03125
+            ]
+          }
+        ]},
+        "idle_with_gun": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun.png",
+              "animation_speed": 0.15,
+              "height": 128,
+              "shift": [
+                0,
+                -0.6875
+              ],
+              "scale": 0.5,
+              "width": 110
+            },
+            "height": 64,
+            "shift": [
+              0,
+              -0.6875
+            ],
+            "width": 56
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 72,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun_mask.png",
+              "height": 88,
+              "shift": [
+                -0.015625,
+                -0.6875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 36,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun_mask.png",
+            "height": 44,
+            "shift": [
+              -0.03125,
+              -0.6875
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level2addon_idle_gun.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_idle_gun.png",
+              "animation_speed": 0.15,
+              "height": 86,
+              "shift": [
+                0,
+                -0.78125
+              ],
+              "scale": 0.5,
+              "width": 72
+            },
+            "height": 44,
+            "shift": [
+              0,
+              -0.78125
+            ],
+            "width": 36
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 72,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_idle_gun_mask.png",
+              "height": 84,
+              "shift": [
+                0,
+                -0.796875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 36,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level2addon_idle_gun_mask.png",
+            "height": 44,
+            "shift": [
+              0,
+              -0.78125
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 182,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun_shadow.png",
+              "height": 94,
+              "shift": [
+                1.03125,
+                0
+              ]
+            },
+            "width": 92,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun_shadow.png",
+            "height": 48,
+            "shift": [
+              1.03125,
+              0
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 182,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_idle_gun_shadow.png",
+              "height": 94,
+              "shift": [
+                1.03125,
+                0
+              ]
+            },
+            "width": 92,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level2addon_idle_gun_shadow.png",
+            "height": 48,
+            "shift": [
+              1.03125,
+              0
+            ]
+          }
+        ]},
+        "running_with_gun": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 18,
+            "filename": "__base__/graphics/entity/character/level1_running_gun.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 18,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun.png",
+              "animation_speed": 0.6,
+              "height": 136,
+              "shift": [
+                0.078125,
+                -0.609375
+              ],
+              "scale": 0.5,
+              "width": 108
+            },
+            "height": 68,
+            "shift": [
+              0.09375,
+              -0.625
+            ],
+            "width": 56
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 66,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun_mask.png",
+              "height": 100,
+              "shift": [
+                0.03125,
+                -0.71875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 34,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_gun_mask.png",
+            "height": 50,
+            "shift": [
+              0.03125,
+              -0.71875
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 18,
+            "filename": "__base__/graphics/entity/character/level2addon_running_gun.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 18,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_running_gun.png",
+              "animation_speed": 0.6,
+              "height": 94,
+              "shift": [
+                0.015625,
+                -0.796875
+              ],
+              "scale": 0.5,
+              "width": 68
+            },
+            "height": 48,
+            "shift": [
+              0.03125,
+              -0.78125
+            ],
+            "width": 36
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 68,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_running_gun_mask.png",
+              "height": 94,
+              "shift": [
+                0.015625,
+                -0.796875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 36,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level2addon_running_gun_mask.png",
+            "height": 48,
+            "shift": [
+              0.03125,
+              -0.78125
+            ]
+          },
+          {
+            "direction_count": 18,
+            "stripes": [
+              {
+                "height_in_frames": 18,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_gun_shadow-1.png"
+              },
+              {
+                "height_in_frames": 18,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_gun_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "stripes": [
+                {
+                  "height_in_frames": 18,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 18,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 192,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "height": 100,
+              "shift": [
+                0.9375,
+                0
+              ]
+            },
+            "width": 96,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 50,
+            "shift": [
+              0.9375,
+              0
+            ]
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 134,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_running_gun_shadow.png",
+              "height": 58,
+              "shift": [
+                1.15625,
+                0.03125
+              ]
+            },
+            "width": 68,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level2addon_running_gun_shadow.png",
+            "height": 30,
+            "shift": [
+              1.15625,
+              0.03125
+            ]
+          }
+        ]},
+        "flipped_shadow_running_with_gun": {"layers": [
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "line_length": 22,
+              "scale": 0.5,
+              "width": 178,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow_flipped.png",
+              "height": 100,
+              "shift": [
+                0.796875,
+                0
+              ]
+            },
+            "line_length": 22,
+            "width": 90,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_gun_shadow_flipped.png",
+            "height": 50,
+            "shift": [
+              0.8125,
+              0
+            ]
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "line_length": 22,
+              "scale": 0.5,
+              "width": 138,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_running_gun_shadow_flipped.png",
+              "height": 58,
+              "shift": [
+                1.0625,
+                0.03125
+              ]
+            },
+            "line_length": 22,
+            "width": 70,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level2addon_running_gun_shadow_flipped.png",
+            "height": 30,
+            "shift": [
+              1.0625,
+              0.03125
+            ]
+          }
+        ]},
+        "mining_with_tool": {"layers": [
+          {
+            "frame_count": 26,
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "frame_count": 26,
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "height": 194,
+              "shift": [
+                0,
+                -0.46875
+              ],
+              "scale": 0.5,
+              "width": 196
+            },
+            "height": 98,
+            "shift": [
+              0,
+              -0.46875
+            ],
+            "width": 98
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 140,
+              "frame_count": 26,
+              "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_mask.png",
+              "height": 138,
+              "shift": [
+                0.015625,
+                -0.59375
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 70,
+            "frame_count": 26,
+            "filename": "__base__/graphics/entity/character/level1_mining_tool_mask.png",
+            "height": 70,
+            "shift": [
+              0,
+              -0.59375
+            ]
+          },
+          {
+            "frame_count": 26,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level2addon_mining_tool.png",
+            "animation_speed": 0.9,
+            "hr_version": {
+              "frame_count": 26,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_mining_tool.png",
+              "animation_speed": 0.9,
+              "height": 124,
+              "shift": [
+                0,
+                -0.65625
+              ],
+              "scale": 0.5,
+              "width": 142
+            },
+            "height": 62,
+            "shift": [
+              0,
+              -0.65625
+            ],
+            "width": 72
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 140,
+              "frame_count": 26,
+              "filename": "__base__/graphics/entity/character/hr-level2addon_mining_tool_mask.png",
+              "height": 120,
+              "shift": [
+                0,
+                -0.6875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 70,
+            "frame_count": 26,
+            "filename": "__base__/graphics/entity/character/level2addon_mining_tool_mask.png",
+            "height": 60,
+            "shift": [
+              0,
+              -0.6875
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "width": 292,
+              "draw_as_shadow": true,
+              "frame_count": 26,
+              "height": 142,
+              "shift": [
+                0.8125,
+                0
+              ]
+            },
+            "width": 146,
+            "draw_as_shadow": true,
+            "frame_count": 26,
+            "height": 72,
+            "shift": [
+              0.8125,
+              0
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level2addon_mining_tool_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level2addon_mining_tool_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level2addon_mining_tool_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level2addon_mining_tool_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "width": 292,
+              "draw_as_shadow": true,
+              "frame_count": 26,
+              "height": 142,
+              "shift": [
+                0.8125,
+                0
+              ]
+            },
+            "width": 146,
+            "draw_as_shadow": true,
+            "frame_count": 26,
+            "height": 72,
+            "shift": [
+              0.8125,
+              0
+            ]
+          }
+        ]}
+      },
+      {
+        "armors": [
+          "power-armor",
+          "power-armor-mk2"
+        ],
+        "running": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_running.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_running.png",
+              "animation_speed": 0.6,
+              "height": 132,
+              "shift": [
+                0,
+                -0.5625
+              ],
+              "scale": 0.5,
+              "width": 88
+            },
+            "height": 66,
+            "shift": [
+              0,
+              -0.5625
+            ],
+            "width": 44
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 78,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_mask.png",
+              "height": 110,
+              "shift": [
+                0,
+                -0.6875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 40,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_mask.png",
+            "height": 56,
+            "shift": [
+              0,
+              -0.6875
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level3addon_running.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_running.png",
+              "animation_speed": 0.6,
+              "height": 108,
+              "shift": [
+                0,
+                -0.78125
+              ],
+              "scale": 0.5,
+              "width": 80
+            },
+            "height": 54,
+            "shift": [
+              0,
+              -0.78125
+            ],
+            "width": 40
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 78,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_running_mask.png",
+              "height": 88,
+              "shift": [
+                0,
+                -0.890625
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 40,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_running_mask.png",
+            "height": 44,
+            "shift": [
+              0,
+              -0.90625
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 190,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "height": 68,
+              "shift": [
+                0.9375,
+                0.078125
+              ]
+            },
+            "width": 96,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 34,
+            "shift": [
+              0.9375,
+              0.0625
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 168,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_running_shadow.png",
+              "height": 68,
+              "shift": [
+                1.1875,
+                0.078125
+              ]
+            },
+            "width": 84,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_running_shadow.png",
+            "height": 36,
+            "shift": [
+              1.1875,
+              0.09375
+            ]
+          }
+        ]},
+        "idle": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_idle.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle.png",
+              "animation_speed": 0.15,
+              "height": 116,
+              "shift": [
+                0,
+                -0.65625
+              ],
+              "scale": 0.5,
+              "width": 92
+            },
+            "height": 58,
+            "shift": [
+              0,
+              -0.65625
+            ],
+            "width": 46
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 56,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_mask.png",
+              "height": 90,
+              "shift": [
+                0,
+                -0.8125
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 28,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_mask.png",
+            "height": 46,
+            "shift": [
+              0,
+              -0.8125
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level3addon_idle.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_idle.png",
+              "animation_speed": 0.15,
+              "height": 86,
+              "shift": [
+                0,
+                -0.875
+              ],
+              "scale": 0.5,
+              "width": 74
+            },
+            "height": 44,
+            "shift": [
+              0,
+              -0.875
+            ],
+            "width": 38
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 74,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_idle_mask.png",
+              "height": 72,
+              "shift": [
+                0,
+                -0.984375
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 38,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_idle_mask.png",
+            "height": 38,
+            "shift": [
+              0,
+              -0.96875
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 164,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_shadow.png",
+              "height": 78,
+              "shift": [
+                0.953125,
+                0.015625
+              ]
+            },
+            "width": 84,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_shadow.png",
+            "height": 40,
+            "shift": [
+              0.96875,
+              0.03125
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 132,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_idle_shadow.png",
+              "height": 64,
+              "shift": [
+                1.203125,
+                0
+              ]
+            },
+            "width": 66,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_idle_shadow.png",
+            "height": 32,
+            "shift": [
+              1.1875,
+              0
+            ]
+          }
+        ]},
+        "idle_with_gun": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun.png",
+              "animation_speed": 0.15,
+              "height": 128,
+              "shift": [
+                0,
+                -0.6875
+              ],
+              "scale": 0.5,
+              "width": 110
+            },
+            "height": 64,
+            "shift": [
+              0,
+              -0.6875
+            ],
+            "width": 56
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 72,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun_mask.png",
+              "height": 88,
+              "shift": [
+                -0.015625,
+                -0.6875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 36,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun_mask.png",
+            "height": 44,
+            "shift": [
+              -0.03125,
+              -0.6875
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level3addon_idle_gun.png",
+            "animation_speed": 0.15,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_idle_gun.png",
+              "animation_speed": 0.15,
+              "height": 88,
+              "shift": [
+                0,
+                -0.765625
+              ],
+              "scale": 0.5,
+              "width": 78
+            },
+            "height": 44,
+            "shift": [
+              0,
+              -0.78125
+            ],
+            "width": 40
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 76,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_idle_gun_mask.png",
+              "height": 68,
+              "shift": [
+                0,
+                -0.890625
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 38,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_idle_gun_mask.png",
+            "height": 36,
+            "shift": [
+              0,
+              -0.875
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 182,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_idle_gun_shadow.png",
+              "height": 94,
+              "shift": [
+                1.03125,
+                0
+              ]
+            },
+            "width": 92,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_idle_gun_shadow.png",
+            "height": 48,
+            "shift": [
+              1.03125,
+              0
+            ]
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.15,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.15,
+              "scale": 0.5,
+              "width": 130,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_idle_gun_shadow.png",
+              "height": 64,
+              "shift": [
+                1.046875,
+                0
+              ]
+            },
+            "width": 66,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_idle_gun_shadow.png",
+            "height": 32,
+            "shift": [
+              1.0625,
+              0
+            ]
+          }
+        ]},
+        "running_with_gun": {"layers": [
+          {
+            "frame_count": 22,
+            "direction_count": 18,
+            "filename": "__base__/graphics/entity/character/level1_running_gun.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 18,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun.png",
+              "animation_speed": 0.6,
+              "height": 136,
+              "shift": [
+                0.078125,
+                -0.609375
+              ],
+              "scale": 0.5,
+              "width": 108
+            },
+            "height": 68,
+            "shift": [
+              0.09375,
+              -0.625
+            ],
+            "width": 56
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 66,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun_mask.png",
+              "height": 100,
+              "shift": [
+                0.03125,
+                -0.71875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 34,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_gun_mask.png",
+            "height": 50,
+            "shift": [
+              0.03125,
+              -0.71875
+            ]
+          },
+          {
+            "frame_count": 22,
+            "direction_count": 18,
+            "filename": "__base__/graphics/entity/character/level3addon_running_gun.png",
+            "animation_speed": 0.6,
+            "hr_version": {
+              "frame_count": 22,
+              "direction_count": 18,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_running_gun.png",
+              "animation_speed": 0.6,
+              "height": 96,
+              "shift": [
+                0.015625,
+                -0.765625
+              ],
+              "scale": 0.5,
+              "width": 76
+            },
+            "height": 48,
+            "shift": [
+              0,
+              -0.78125
+            ],
+            "width": 38
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 74,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_running_gun_mask.png",
+              "height": 74,
+              "shift": [
+                0.015625,
+                -0.921875
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 38,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_running_gun_mask.png",
+            "height": 38,
+            "shift": [
+              0.03125,
+              -0.90625
+            ]
+          },
+          {
+            "direction_count": 18,
+            "stripes": [
+              {
+                "height_in_frames": 18,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_gun_shadow-1.png"
+              },
+              {
+                "height_in_frames": 18,
+                "width_in_frames": 11,
+                "filename": "__base__/graphics/entity/character/level1_running_gun_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "stripes": [
+                {
+                  "height_in_frames": 18,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 18,
+                  "width_in_frames": 11,
+                  "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 192,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "height": 100,
+              "shift": [
+                0.9375,
+                0
+              ]
+            },
+            "width": 96,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "height": 50,
+            "shift": [
+              0.9375,
+              0
+            ]
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "scale": 0.5,
+              "width": 136,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_running_gun_shadow.png",
+              "height": 64,
+              "shift": [
+                1.125,
+                0.015625
+              ]
+            },
+            "width": 68,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_running_gun_shadow.png",
+            "height": 32,
+            "shift": [
+              1.125,
+              0
+            ]
+          }
+        ]},
+        "flipped_shadow_running_with_gun": {"layers": [
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "line_length": 22,
+              "scale": 0.5,
+              "width": 178,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level1_running_gun_shadow_flipped.png",
+              "height": 100,
+              "shift": [
+                0.796875,
+                0
+              ]
+            },
+            "line_length": 22,
+            "width": 90,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level1_running_gun_shadow_flipped.png",
+            "height": 50,
+            "shift": [
+              0.8125,
+              0
+            ]
+          },
+          {
+            "direction_count": 18,
+            "animation_speed": 0.6,
+            "hr_version": {
+              "direction_count": 18,
+              "animation_speed": 0.6,
+              "line_length": 22,
+              "scale": 0.5,
+              "width": 142,
+              "draw_as_shadow": true,
+              "frame_count": 22,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_running_gun_shadow_flipped.png",
+              "height": 64,
+              "shift": [
+                1.046875,
+                0.015625
+              ]
+            },
+            "line_length": 22,
+            "width": 72,
+            "draw_as_shadow": true,
+            "frame_count": 22,
+            "filename": "__base__/graphics/entity/character/level3addon_running_gun_shadow_flipped.png",
+            "height": 32,
+            "shift": [
+              1.0625,
+              0
+            ]
+          }
+        ]},
+        "mining_with_tool": {"layers": [
+          {
+            "frame_count": 26,
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "frame_count": 26,
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "height": 194,
+              "shift": [
+                0,
+                -0.46875
+              ],
+              "scale": 0.5,
+              "width": 196
+            },
+            "height": 98,
+            "shift": [
+              0,
+              -0.46875
+            ],
+            "width": 98
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 140,
+              "frame_count": 26,
+              "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_mask.png",
+              "height": 138,
+              "shift": [
+                0.015625,
+                -0.59375
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 70,
+            "frame_count": 26,
+            "filename": "__base__/graphics/entity/character/level1_mining_tool_mask.png",
+            "height": 70,
+            "shift": [
+              0,
+              -0.59375
+            ]
+          },
+          {
+            "frame_count": 26,
+            "direction_count": 8,
+            "filename": "__base__/graphics/entity/character/level3addon_mining_tool.png",
+            "animation_speed": 0.9,
+            "hr_version": {
+              "frame_count": 26,
+              "direction_count": 8,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_mining_tool.png",
+              "animation_speed": 0.9,
+              "height": 124,
+              "shift": [
+                0,
+                -0.671875
+              ],
+              "scale": 0.5,
+              "width": 144
+            },
+            "height": 64,
+            "shift": [
+              0,
+              -0.65625
+            ],
+            "width": 72
+          },
+          {
+            "direction_count": 8,
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "apply_runtime_tint": true,
+              "width": 138,
+              "frame_count": 26,
+              "filename": "__base__/graphics/entity/character/hr-level3addon_mining_tool_mask.png",
+              "height": 112,
+              "shift": [
+                0,
+                -0.75
+              ]
+            },
+            "apply_runtime_tint": true,
+            "width": 70,
+            "frame_count": 26,
+            "filename": "__base__/graphics/entity/character/level3addon_mining_tool_mask.png",
+            "height": 56,
+            "shift": [
+              0,
+              -0.75
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level1_mining_tool_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level1_mining_tool_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "width": 292,
+              "draw_as_shadow": true,
+              "frame_count": 26,
+              "height": 142,
+              "shift": [
+                0.8125,
+                0
+              ]
+            },
+            "width": 146,
+            "draw_as_shadow": true,
+            "frame_count": 26,
+            "height": 72,
+            "shift": [
+              0.8125,
+              0
+            ]
+          },
+          {
+            "direction_count": 8,
+            "stripes": [
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level3addon_mining_tool_shadow-1.png"
+              },
+              {
+                "height_in_frames": 8,
+                "width_in_frames": 13,
+                "filename": "__base__/graphics/entity/character/level3addon_mining_tool_shadow-2.png"
+              }
+            ],
+            "animation_speed": 0.9,
+            "hr_version": {
+              "direction_count": 8,
+              "stripes": [
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level3addon_mining_tool_shadow-1.png"
+                },
+                {
+                  "height_in_frames": 8,
+                  "width_in_frames": 13,
+                  "filename": "__base__/graphics/entity/character/hr-level3addon_mining_tool_shadow-2.png"
+                }
+              ],
+              "animation_speed": 0.9,
+              "scale": 0.5,
+              "width": 184,
+              "draw_as_shadow": true,
+              "frame_count": 26,
+              "height": 116,
+              "shift": [
+                0.9375,
+                0
+              ]
+            },
+            "width": 92,
+            "draw_as_shadow": true,
+            "frame_count": 26,
+            "height": 58,
+            "shift": [
+              0.9375,
+              0
+            ]
+          }
+        ]}
+      }
+    ],
+    "collision_box": [
+      [
+        -0.2,
+        -0.2
+      ],
+      [
+        0.2,
+        0.2
+      ]
+    ],
+    "icon_size": 64,
+    "mining_categories": ["basic-solid"],
+    "ticks_to_keep_gun": 600,
+    "inventory_size": 80,
+    "damage_hit_tint": {
+      "a": 0,
+      "g": 0,
+      "r": 0.12,
+      "b": 0
+    },
+    "light": [
+      {
+        "color": {
+          "g": 1,
+          "r": 1,
+          "b": 1
+        },
+        "minimum_darkness": 0.3,
+        "intensity": 0.4,
+        "size": 25
+      },
+      {
+        "type": "oriented",
+        "minimum_darkness": 0.3,
+        "intensity": 0.6,
+        "picture": {
+          "flags": ["light"],
+          "filename": "__core__/graphics/light-cone.png",
+          "scale": 2,
+          "height": 200,
+          "priority": "extra-high",
+          "width": 200
+        },
+        "shift": [
+          0,
+          -13
+        ],
+        "color": {
+          "g": 1,
+          "r": 1,
+          "b": 1
+        },
+        "size": 2
+      }
+    ],
+    "type": "character",
+    "mining_with_tool_particles_animation_positions": [19],
+    "synced_footstep_particle_triggers": [
+      {
+        "type": "create-particle",
+        "tiles": ["water-shallow"],
+        "speed_from_center_deviation": 0.05,
+        "tail_length": 3,
+        "speed_from_center": 0.01,
+        "offset_deviation": [
+          [
+            -0.2,
+            -0.2
+          ],
+          [
+            0.2,
+            0.2
+          ]
+        ],
+        "particle_name": "shallow-water-particle",
+        "initial_vertical_speed_deviation": 0.05,
+        "initial_height": 0.2,
+        "repeat_count": 3,
+        "initial_vertical_speed": 0.03
+      },
+      {
+        "type": "create-particle",
+        "tiles": ["water-mud"],
+        "speed_from_center_deviation": 0.05,
+        "tail_length": 3,
+        "speed_from_center": 0.01,
+        "offset_deviation": [
+          [
+            -0.2,
+            -0.2
+          ],
+          [
+            0.2,
+            0.2
+          ]
+        ],
+        "particle_name": "shallow-water-2-particle",
+        "initial_vertical_speed_deviation": 0.05,
+        "initial_height": 0.2,
+        "repeat_count": 3,
+        "initial_vertical_speed": 0.03
+      },
+      {
+        "tiles": [
+          "grass-1",
+          "grass-2",
+          "grass-4"
+        ],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "vegetation-character-particle-small-medium",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "grass-1-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 4,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "brown-dust-vehicle-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 2,
+            "initial_vertical_speed": 0.01,
+            "probability": 0.75
+          }
+        ]
+      },
+      {
+        "tiles": ["grass-3"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "grass-3-vegetation-character-particle-small-medium",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 10,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "grass-3-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "brown-dust-vehicle-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 2,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["sand-1"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "sand-1-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.2,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "sand-1-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 1,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["sand-2"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "sand-2-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "repeat_count": 10,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "sand-2-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 1,
+            "initial_vertical_speed": 0.01,
+            "probability": 0.3
+          }
+        ]
+      },
+      {
+        "tiles": ["sand-3"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "sand-3-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 10,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "sand-3-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 3,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["red-desert-0"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "rotate_offsets": true,
+            "particle_name": "red-desert-0-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 10,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "rotate_offsets": true,
+            "particle_name": "vegetation-character-particle-small-medium",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 4,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "rotate_offsets": true,
+            "particle_name": "red-desert-0-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["red-desert-1"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "rotate_offsets": true,
+            "particle_name": "red-desert-1-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 1,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "rotate_offsets": true,
+            "particle_name": "red-desert-1-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["red-desert-2"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "red-desert-2-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 1,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "rotate_offsets": true,
+            "particle_name": "red-desert-2-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["red-desert-3"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "red-desert-3-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 1,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "rotate_offsets": true,
+            "particle_name": "red-desert-3-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dirt-1"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-1-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-1-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dirt-2"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-2-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-2-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dirt-3"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-3-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-3-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dirt-4"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-4-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-4-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dirt-5"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-5-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-5-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dirt-6"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-6-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-6-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dirt-7"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-5-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dirt-7-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["dry-dirt"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dry-dirt-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "dry-dirt-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["landfill"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "landfill-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "landfill-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "tiles": ["nuclear-ground"],
+        "actions": [
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "nuclear-ground-dust-particle",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 7,
+            "initial_vertical_speed": 0.02,
+            "probability": 1
+          },
+          {
+            "type": "create-particle",
+            "speed_from_center_deviation": 0,
+            "speed_from_center": 0.01,
+            "offset_deviation": [
+              [
+                -0.2,
+                -0.2
+              ],
+              [
+                0.2,
+                0.2
+              ]
+            ],
+            "particle_name": "nuclear-ground-stone-character-particle-tiny",
+            "initial_vertical_speed_deviation": 0.05,
+            "initial_height": 0.1,
+            "frame_speed": 0.4,
+            "repeat_count": 5,
+            "initial_vertical_speed": 0.01,
+            "probability": 1
+          }
+        ]
+      }
+    ],
+    "footprint_particles": [
+      {
+        "tiles": [
+          "dry-dirt",
+          "dirt-1",
+          "dirt-2",
+          "dirt-3",
+          "dirt-4",
+          "dirt-5",
+          "dirt-6",
+          "dirt-7",
+          "sand-1",
+          "sand-2",
+          "sand-3",
+          "nuclear-ground",
+          "red-desert-0",
+          "red-desert-1",
+          "red-desert-2",
+          "red-desert-3"
+        ],
+        "particle_name": "character-footprint-particle"
+      },
+      {
+        "tiles": [],
+        "use_as_default": true
+      }
+    ],
+    "left_footprint_frames": [
+      5,
+      16
+    ],
+    "subgroup": "creatures",
+    "drop_item_distance": 10,
+    "reach_resource_distance": 2.7,
+    "tool_attack_result": {
+      "type": "direct",
+      "action_delivery": {
+        "type": "instant",
+        "target_effects": {
+          "type": "damage",
+          "damage": {
+            "amount": 8,
+            "type": "physical"
+          }
+        }
+      }
+    },
+    "maximum_corner_sliding_distance": 0.7,
+    "right_footprint_frames": [
+      10,
+      21
+    ],
+    "left_footprint_offset": [
+      -0.1,
+      0
+    ],
+    "ticks_to_stay_in_combat": 600,
+    "icon_mipmaps": 4,
+    "running_speed": 0.15,
+    "healing_per_tick": 0.15,
+    "item_pickup_distance": 1,
+    "loot_pickup_distance": 2,
+    "distance_per_frame": 0.13
+  }
+}

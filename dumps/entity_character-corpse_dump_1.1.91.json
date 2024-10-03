@@ -1,0 +1,342 @@
+{
+  "name": "character-corpse",
+  "category": "entity",
+  "version": "1.1.91",
+  "data": {
+    "type": "character-corpse",
+    "time_to_live": 54000,
+    "armor_picture_mapping": {
+      "light-armor": 1,
+      "heavy-armor": 2,
+      "power-armor-mk2": 3,
+      "modular-armor": 2,
+      "power-armor": 3
+    },
+    "icon_size": 64,
+    "pictures": [
+      {"layers": [
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead.png",
+            "height": 112,
+            "shift": [
+              -0.21875,
+              -0.171875
+            ],
+            "scale": 0.5,
+            "width": 114
+          },
+          "height": 58,
+          "shift": [
+            -0.21875,
+            -0.15625
+          ],
+          "width": 58
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead_mask.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead_mask.png",
+            "height": 70,
+            "shift": [
+              -0.078125,
+              -0.203125
+            ],
+            "scale": 0.5,
+            "apply_runtime_tint": true,
+            "width": 88
+          },
+          "height": 36,
+          "shift": [
+            -0.0625,
+            -0.1875
+          ],
+          "apply_runtime_tint": true,
+          "width": 46
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead_shadow.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead_shadow.png",
+            "height": 106,
+            "shift": [
+              -0.109375,
+              -0.09375
+            ],
+            "scale": 0.5,
+            "width": 108,
+            "draw_as_shadow": true
+          },
+          "height": 54,
+          "shift": [
+            -0.125,
+            -0.09375
+          ],
+          "width": 54,
+          "draw_as_shadow": true
+        }
+      ]},
+      {"layers": [
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead.png",
+            "height": 112,
+            "shift": [
+              -0.21875,
+              -0.171875
+            ],
+            "scale": 0.5,
+            "width": 114
+          },
+          "height": 58,
+          "shift": [
+            -0.21875,
+            -0.15625
+          ],
+          "width": 58
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead_mask.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead_mask.png",
+            "height": 70,
+            "shift": [
+              -0.078125,
+              -0.203125
+            ],
+            "scale": 0.5,
+            "apply_runtime_tint": true,
+            "width": 88
+          },
+          "height": 36,
+          "shift": [
+            -0.0625,
+            -0.1875
+          ],
+          "apply_runtime_tint": true,
+          "width": 46
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level2addon_dead.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level2addon_dead.png",
+            "height": 68,
+            "shift": [
+              -0.03125,
+              -0.15625
+            ],
+            "scale": 0.5,
+            "width": 86
+          },
+          "height": 34,
+          "shift": [
+            -0.03125,
+            -0.15625
+          ],
+          "width": 44
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level2addon_dead_mask.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level2addon_dead_mask.png",
+            "height": 66,
+            "shift": [
+              -0.015625,
+              -0.171875
+            ],
+            "scale": 0.5,
+            "apply_runtime_tint": true,
+            "width": 86
+          },
+          "height": 34,
+          "shift": [
+            0,
+            -0.15625
+          ],
+          "apply_runtime_tint": true,
+          "width": 44
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead_shadow.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead_shadow.png",
+            "height": 106,
+            "shift": [
+              -0.109375,
+              -0.09375
+            ],
+            "scale": 0.5,
+            "width": 108,
+            "draw_as_shadow": true
+          },
+          "height": 54,
+          "shift": [
+            -0.125,
+            -0.09375
+          ],
+          "width": 54,
+          "draw_as_shadow": true
+        }
+      ]},
+      {"layers": [
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead.png",
+            "height": 112,
+            "shift": [
+              -0.21875,
+              -0.171875
+            ],
+            "scale": 0.5,
+            "width": 114
+          },
+          "height": 58,
+          "shift": [
+            -0.21875,
+            -0.15625
+          ],
+          "width": 58
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead_mask.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead_mask.png",
+            "height": 70,
+            "shift": [
+              -0.078125,
+              -0.203125
+            ],
+            "scale": 0.5,
+            "apply_runtime_tint": true,
+            "width": 88
+          },
+          "height": 36,
+          "shift": [
+            -0.0625,
+            -0.1875
+          ],
+          "apply_runtime_tint": true,
+          "width": 46
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level3addon_dead.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level3addon_dead.png",
+            "height": 68,
+            "shift": [
+              -0.015625,
+              -0.15625
+            ],
+            "scale": 0.5,
+            "width": 88
+          },
+          "height": 34,
+          "shift": [
+            -0.03125,
+            -0.15625
+          ],
+          "width": 44
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level3addon_dead_mask.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level3addon_dead_mask.png",
+            "height": 60,
+            "shift": [
+              0.09375,
+              -0.109375
+            ],
+            "scale": 0.5,
+            "apply_runtime_tint": true,
+            "width": 72
+          },
+          "height": 30,
+          "shift": [
+            0.09375,
+            -0.125
+          ],
+          "apply_runtime_tint": true,
+          "width": 36
+        },
+        {
+          "frame_count": 2,
+          "filename": "__base__/graphics/entity/character/level1_dead_shadow.png",
+          "hr_version": {
+            "frame_count": 2,
+            "filename": "__base__/graphics/entity/character/hr-level1_dead_shadow.png",
+            "height": 106,
+            "shift": [
+              -0.109375,
+              -0.09375
+            ],
+            "scale": 0.5,
+            "width": 108,
+            "draw_as_shadow": true
+          },
+          "height": 54,
+          "shift": [
+            -0.125,
+            -0.09375
+          ],
+          "width": 54,
+          "draw_as_shadow": true
+        }
+      ]}
+    ],
+    "icon_mipmaps": 4,
+    "minable": {"mining_time": 2},
+    "selection_priority": 100,
+    "flags": [
+      "placeable-off-grid",
+      "not-rotatable",
+      "not-on-map"
+    ],
+    "selection_box": [
+      [
+        -0.7,
+        -0.7
+      ],
+      [
+        0.7,
+        0.7
+      ]
+    ],
+    "name": "character-corpse",
+    "icon": "__core__/graphics/icons/entity/character.png",
+    "close_sound": {
+      "filename": "__base__/sound/character-corpse-close.ogg",
+      "volume": 0.5
+    },
+    "open_sound": {
+      "filename": "__base__/sound/character-corpse-open.ogg",
+      "volume": 0.5
+    }
+  }
+}

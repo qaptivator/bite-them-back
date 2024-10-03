@@ -1,2 +1,2 @@
 require("prototypes.entity.character")
-require("prototypes.recipe.main")
+require("prototypes.recipe")

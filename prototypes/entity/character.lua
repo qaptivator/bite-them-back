@@ -54,7 +54,7 @@ local animations = {
 		idle_with_gun = biteridleanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
 		running = biterrunanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
 		mining_with_tool = biterattackanimation(big_biter_scale, big_biter_tint1, big_biter_tint2),
-		running_with_gun = char.animations[1].running_with_gun,
+		running_with_gun = char.animations[2].running_with_gun,
 		flipped_shadow_running_with_gun = char.animations[1].flipped_shadow_running_with_gun,
 	},
 	{

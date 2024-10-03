@@ -53,6 +53,13 @@ there will be two branches: `main` and `dev`.
 
   use the conventional commits when making commits: `<type>: <description>`
 
+# todo
+
+- [x] set basic animations of player character to biter animations
+- [] make a propwer idle animation
+- [] make a proper gun holding animation. they require 18 directions while biter animations have 16.
+- [] make the player be same character force as biters
+
 # the ideas zone
 
 these are my speculations on how the mod will look like. it's a random unorganized mess so dont expect much of it.<br>
